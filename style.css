@@ -1,0 +1,1006 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    outline: none;
+}
+
+.hero-background {
+  position: absolute;
+  transition: z-index 0.3s;
+}
+
+.hero-background.active {
+  z-index: 10;
+}
+
+.hero-background:not(.active) {
+  z-index: 1;
+}
+
+
+/* ------------------ THIS IS THE HEADER SECTION -----------------*/
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 0 7vw;
+    height: auto;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.logo{
+    height: 100%;
+    width: 20%;
+}
+
+.logo img{
+    width: 70%;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5vw;
+}
+
+nav div{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav div.active{
+    background-color: #ff6b2c;
+}
+
+nav div:hover{
+    background-color: #ff6b2c;
+}
+a{
+    color: black;
+    font-weight: 700;
+}
+
+.menu-bar{
+    height: 100%;
+    width: 20%;
+    display: none;
+    justify-content: flex-end;
+    font-size: 40px;
+    align-items: center;
+    color: #ff6b2c;
+}
+
+.header-buttom{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 35px;
+    margin-top: 15vh;
+    transition: 2.5s ease-in-out display;
+    z-index: 1000;
+}
+
+.header-buttom a{
+    color: black;
+}
+
+
+.header-buttom-link:hover{
+    background-color: #ff6b2c;
+    padding: 1vh 3vw;
+    border-radius: 15px;
+}
+
+/* ------------------ THIS IS THE HERO SECTION -----------------*/
+
+
+.hero{
+    height: 85vh;
+    position: relative;
+    width: 100%;
+
+}
+
+.hero-background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    background-position: center;
+    transition: opacity 1.5s ease-in-out;
+    display: flex;
+}
+
+.hero-background.active{
+    opacity: 1;
+}
+
+
+.hero-content{
+    color: white;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.hero-div{
+    width: 15vw;
+    height: 4vh;
+    background-color: #FEF200;
+    text-align: center;
+    border-radius: 3px;
+    color: black;
+    font-weight: bolder;
+}
+
+.hero-h1{
+    font-size: 50px;
+}
+
+.hero-h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2vh;
+    text-align: center;
+}
+.hero-content button, .btnmap{
+    width: 10vw;
+    height: 5vh;
+    background-color: #ff6b2c;
+    border-radius: 15px;
+    font-weight: bolder;
+    margin-top: 3vh;
+    border: none;
+}
+
+button:hover, button:hover a{
+    background-color: black !important;
+    color: white !important;
+}
+
+.hero-content-two{
+    color: white;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 5vw;
+}
+/* ------------------ THIS IS THE POPULAR ITEM  SECTION -----------------*/
+
+.popular{
+    padding: 0 7vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+.popular-top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-text-content{
+    width: 100%;
+}
+
+.changing-color{
+    color: #ff6b2c;
+}
+
+
+.popular-view{
+    float: right;
+    width: 9vw;
+    height: 6vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ff6b2c;
+    gap: 5px;
+    padding: 2px;
+}
+
+.fa-arrow-right{
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    color: black !important
+} 
+
+.popular-buttom{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.popular-buttom-top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.popular-buttom-top .one{
+    width: 40%;
+    border: 1px solid green;
+    height: 100%;
+    padding: 2vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('mike-PxJ9zkM2wdA-unsplash-1024x683.jpg copy.webp');
+    background-position-x: 70%;
+    background-position-y: 40%;
+    background-size: cover;
+}
+
+.one-text{
+    width: 100%;
+    height: 80%;
+    color: white;
+}
+
+.one-buttom{
+    width: 100%;
+    height: 20%;
+}
+
+.one-buttom button{
+    width: 30%;
+    height: 5vh;
+    background-color: #ff6b2c;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-size: 10px;
+}
+
+.popular-buttom-top .two{
+    width: 60%;
+    border: 1px solid green;
+    height: 100%;
+    padding: 2vh;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('pizza-5275191_1280 copy.jpg');
+    background-position-x: 70%;
+    background-position-y: 40%;
+    background-size: cover;
+}
+
+.popular-buttom-buttom{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+
+}
+
+.popular-buttom-buttom .one{
+    width: 60%;
+    border: 1px solid green;
+    height: 100%;
+    padding: 2vh;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('food-4773380_1280.jpg');
+    background-position-x: 10%;
+    background-position-y: 70%;
+    background-size: cover;
+
+
+}
+
+.popular-buttom-buttom .two{
+    width: 40%;
+    border: 1px solid green;
+    height: 100%;
+    padding: 2vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('brazilian-steak-platter.jpg');
+    background-position-x: 70%;
+    background-position-y: 40%;
+    background-size: cover;
+}
+
+/* ------------------ THIS IS THE LISTICON OUT SECTION -----------------*/
+
+
+.listicon{
+    padding: 0 7vw;
+    height: auto;
+    margin-top: 2vh;
+}
+
+.listicondiv{
+    margin: 0 auto;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.icon{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon:hover{
+    cursor: pointer;
+    color: #ff6b2c;
+}
+
+.icon i{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgba(236, 231, 231, 1);
+}
+
+.icon span{
+    font-size: 10px;
+}
+
+.icon-text.active{
+    border: 1px solid #ff6b2c;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #ff6b2c;
+}
+/* ------------------ THIS IS THE MENU-LIST OUT SECTION -----------------*/
+
+.menu-list{
+    padding: 0 7vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(236, 231, 231, 0.7);
+}
+
+
+
+/* ------------------ THIS IS THE MENU-SHOW OUT SECTION -----------------*/
+
+.menu-show{
+    padding: 0 7vw;
+    margin-top: 7vh;
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-show-listing{
+    padding: 0 7vw;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2vw;
+    position: absolute;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.menu-show-listing.active{
+    opacity: 1;
+    z-index: 10;
+}
+
+.menu-type{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.menu-type-image{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-type-img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-type-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-type-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(236, 231, 231, 0.7);
+    height: 30%;
+    padding: 1vh 0;
+}
+
+
+/* ------------------ THIS IS THE TESTIMONIAL SECTION -----------------*/
+
+.testimonial{
+    height: 70vh;
+    padding: 3vw 7vw;
+    margin: 5vh 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(236, 231, 231, 0.7);
+    align-items: flex-start;
+
+}
+
+.testimonial-content{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 2vw;
+}
+
+.testitop{
+    font-size: 15px;
+    margin-bottom: 2vh;
+}
+
+.testilink{
+    text-decoration-line: underline;
+    margin-top: 5vh;
+    color: #ff6b2c;
+    font-size: 10px;
+}
+.testimonial img{
+    width: 70%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-radius: 15px;
+}
+
+/* ------------------ THIS IS THE FAQ SECTION -----------------*/
+.faq{
+    height: 80vh;
+    padding: 0 7vw;
+    margin: 7vh 0;
+}
+
+.faq-content{
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    align-items: center;
+    gap: 0.5vw;
+    margin-top: 3vh;
+}
+
+.faq-list{
+    border: 2px solid #ff6b2c;
+    border-radius: 5px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 0 3vw;
+}
+
+.faq-list-number{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 7vh;
+    background-color: rgba(236, 231, 231, 0.7);
+    border-radius: 3px;
+    flex-direction: column;
+    padding:0 1vw;
+}
+
+.faq-list-number:hover{
+    cursor: pointer;
+}
+
+.faq-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+}
+
+.faq-top p{
+    width: 95%;
+}
+
+.faq-buttom{
+    padding: 0 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2vh;
+    display: none;
+    transition: opacity 1.5s ease-out;
+    opacity: 0;
+}
+
+.faq-buttom.active{
+    opacity: 1;
+}
+
+
+/* ------------------ THIS IS THE NEWSLETTER SUBSCRIPTION SECTION -----------------*/
+
+.Newsletter-sub{
+    padding: 0 7vw;
+    background-color: rgba(236, 231, 231, 0.7);
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Newsletter-sub span{
+    color: #ff6b2c;
+}
+
+.Newsletter-sub p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.subscribe{
+    width: 40%;
+    margin: 5vh auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #ff6b2c;
+}
+
+.subscribe input{
+    width: 70%;
+    padding-left: 0.9vw;
+    border: none;
+    height: 100%;
+}
+
+.subscribe button{
+    width: 30%;
+    height: 100%;
+    background-color: #ff6b2c;
+    border-radius: 15px;
+    border: none;
+}
+
+/* ------------------ THIS IS THE BLOG SECTION -----------------*/
+.blog{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5vh 7vw;
+    flex-direction: column;
+}
+
+
+.blog-header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+.blog-header h3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    
+}
+
+.blog-header div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    gap: 2vw;
+}
+
+.blog-header div button{
+    width: 30%;
+    height: 5vh;
+    background-color: #ff6b2c;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+.blog-list{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.blog-list .big{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.big img{
+    width: 100%;
+    height: 70%;
+}
+
+.big .content{
+    width: 100%;
+    height: 30%;
+    padding: 1vh 1.5vw;
+    background-color: rgba(236, 231, 231, 0.7);
+}
+
+.smallp{
+    font-size: 10px;
+}
+
+.content .head{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.blog-list .small{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.small .each-blog{
+    flex: 1 1 calc(50% - 5px);
+    height: calc(50% - 5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.each-blog img{
+    width: 100%;
+    height: 70%;
+}
+
+.each-blog .content{
+    height: 30%;
+    width: 100%;
+}
+
+.smalling{
+    background-color: rgba(236, 231, 231, 0.7);
+    padding: 0.5vh 0.7vw;
+}
+/* ------------------ THIS IS THE FOOTER SECTION -----------------*/
+
+footer{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-top{
+    padding: 0 7vw;
+    border-top: 2px solid #ff6b2c;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-area{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-area img{
+    width: 50%;
+    height: 50%;
+}
+
+.logo-area div i{
+    margin-right: 0.5vw;
+    color: #ff6b2c;
+}
+
+.Explore{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1vh;
+    padding-top: 5vh;
+    padding-left: 3vw;
+}
+
+.explore-header{
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+
+.explore-list a{
+    font-weight: 100;
+}
+
+.fas{
+    color: #ff6b2c;
+}
+
+.footer-buttom{
+    height: 5vh;
+    width: 100%;
+    background-color: #ff6b2c;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 300px;
+        margin-left: -30px;
+    }
+    .logo img{
+        width: 200px;
+    }
+    header{
+        position: fixed;
+        z-index: 20;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+    .menu-bar{
+        display: flex;
+    }
+    .hero-div{
+        width: 50% ;
+    }
+    .hero-content, .hero-content-two{
+        width: 90vw !important;
+    }
+    
+    .hero-h3{
+        width: 100% !important;
+        font-size: 24px;
+        text-align: center;
+    }
+    .btnmap, button{
+        width: 40vw !important;
+        height: 6vh !important;
+        font-size: 16px !important;
+    }
+    
+    .popular{
+        height: auto;
+        padding-top: 3vh;
+    }
+    .popular-top{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+    }
+    .popular-view{
+        width: 30%;
+    }
+    .popular-buttom-top{
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+    .one{
+        width: 100%;
+    }
+    .popular-buttom-top .one, .popular-buttom-top .two, .popular-buttom-buttom .one, .popular-buttom-buttom .two{
+        width: 100%;
+        height: 50vh;
+    }
+    .popular-buttom-buttom{
+        flex-direction: column;
+    }
+
+    .faq{
+        height: auto;
+        flex-direction: column;
+    }
+    .faq-content{
+        width: 100%;
+    }
+    .faq-img{
+        display: none;
+    }
+    .faq-list{
+        width: 100%;
+    }
+    .subscribe{
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+    }
+    .subscribe input{
+        font-size: 20px;
+        padding-left: 4vw;
+    }
+    .subscribe button{
+        border-radius: 20px;
+    }
+    .popbtn{
+        font-size: 18px;
+    }
+    .testimoimg{
+        display: none;
+    }
+    .testimonial{
+        height: 40vh;
+    }
+    .displayno{
+        display: none;
+    }
+    .Newsletter-sub{
+        height: 300px;
+    }
+    .blog{
+        height: auto;
+    }
+    .blog-list .small{
+        display: none;
+    }
+    .smallp{
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .big{
+        height: auto !important;
+    }
+    .big .content h4{
+        font-size: 20px;
+    }
+    .smallq{
+        font-size: 20px !important;
+        margin-top: 10px;
+    }
+    .blog-header-div{
+        display: none !important;
+    }
+    .listicon{
+        display: none;
+    }
+    .logo-area{
+        width: 200px;
+    }
+    .logo-area img{
+        width: 200px;
+        margin-left: -25px;
+    }
+    .footer-top{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+    }
+    footer{
+        height: auto;
+        font-size: 20px;
+    }
+    .Explore{
+        width: 200px;
+    }
+}
