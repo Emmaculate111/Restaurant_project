@@ -871,8 +871,14 @@ footer{
     .menu-bar{
         display: flex;
     }
+
+    .hero-h1{
+        font-size: 45px;
+    }
     .hero-div{
+        height: auto;
         width: 50% ;
+
     }
     .hero-content, .hero-content-two{
         width: 90vw !important;
@@ -955,7 +961,7 @@ footer{
         display: none;
     }
     .Newsletter-sub{
-        height: 300px;
+        height: auto;
     }
     .blog{
         height: auto;
